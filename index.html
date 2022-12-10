@@ -7,142 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatiana's Portfolio</title>
 
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color.css">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
+    <!-- Font-Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
 <body>
 
-    <header class="neutral-theme">
-        <h1>Hello! My name is <span>Tatiana</span>.<br>I'm a developer.</h1>
-        <a href="#about" class="header-link button">Find out more</a>
-    </header>
-
-    <main>
-        <section class="about primary-theme" id="about">
-            <h2>About me</h2>
-            <div class="about-container">
-                <img src="img/profile.jpg" alt="A photograph of Tatiana." class="about-img">
-                <div class="about-text">
-                    <p>My name is Tatiana Sanchez. I'm a student of Systems Engineering (also known as Computer Science)
-                        in Colombia.</p>
-                    <p>I discover my love for programming when I started my major, now I'm looking forward to becoming a
-                        software and web developer.</p>
-                    <p>I also love reading, watching movies and tv shows!</p>
-                    <a href="www.resume.com" class="button">My Resume</a>
-                </div>
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="aside">
+            <div class="logo">
+                <a href="#"> <span>T</span>atiana</a>
             </div>
-            <blockquote>"Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging
-                Monday’s code"
-                <cite>-Dan Salomon</cite>
-            </blockquote>
-        </section>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#"><i class="fa fa-briefcase"></i>Projects</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <section class="home section">
+                Home
+            </section>
+        </div>
+    </div>
 
-        <section class="neutral-theme">
-            <h2>Projects</h2>
-            <article class="card">
-                <div class="article-text">
-                    <h3>Terrarium</h3>
-                    <p>A drag and drop terrarium made in HTML, CSS and JavaScript.</p>
-                    <div>
-                        <a href="https://github.com/TatianaSanchez01/terrarium.git" class="button">Github Repository</a>
-                        <a href="https://fef-terrarium.netlify.app" class="button">See it live</a>
-                    </div>
-                </div>
-                <img src="img/terrarium-project.jpg" alt="project image" class="article-img">
-            </article>
-            <article class="card">
-                <div class="article-text">
-                    <h3>Memory card Game</h3>
-                    <p>A game to pair the cards with the same gem. Made in HTML, CSS and JavaScript.</p>
-                    <div>
-                        <a href="https://github.com/TatianaSanchez01/memory-card-game.git" class="button">Github
-                            Repository</a>
-                        <a href="https://fef-memory-card-game.netlify.app" class="button">See it live</a>
-                    </div>
-                </div>
-                <img src="img/memory-card-game-project.jpg" alt="project image" class="article-img">
-            </article>
-            <article class="card">
-                <div class="article-text">
-                    <h3>Typing Game - Shadowhunters theme</h3>
-                    <p>This is a typing game with quotes from the show Shadowhunters. Made in HTML, CSS and JavaScript.
-                    </p>
-                    <div>
-                        <a href="https://github.com/TatianaSanchez01/typing-game.git" class="button">Github
-                            Repository</a>
-                        <a href="https://fef-typing-game.netlify.app/" class="button">See it live</a>
-                    </div>
-                </div>
-                <img src="img/typing-game-project.jpg" alt="project image" class="article-img">
-            </article>
-            <article class="card">
-                <div class="article-text">
-                    <h3>Weather App</h3>
-                    <p>This is a weather application, using the OpenWeatherMap API. Made in HTML, CSS and JavaScript.
-                    </p>
-                    <div>
-                        <a href="https://github.com/TatianaSanchez01/weatherapp.git" class="button">Github
-                            Repository</a>
-                        <a href="https://weatherme12.netlify.app" class="button">See it live</a>
-                    </div>
-                </div>
-                <img src="img/weatherapp-project.jpg" alt="project image" class="article-img">
-            </article>
-            <article class="card">
-                <div class="article-text">
-                    <h3>Memory Card Game in Vue</h3>
-                    <p>A game to pair the cards with the same gem. Made in VueJs, HTML and CSS.
-                    </p>
-                    <div>
-                        <a href="https://github.com/TatianaSanchez01/memory-card-game-vue.git" class="button">Github
-                            Repository</a>
-                        <a href="https://tatianasanchez01.github.io/memory-card-game-vue/" class="button">See it
-                            live</a>
-                    </div>
-                </div>
-                <img src="img/memory-card-game-project.jpg" alt="project image" class="article-img">
-            </article>
-            <article class="card">
-                <div class="article-text">
-                    <h3>Weatherme</h3>
-                    <p>Weather app with Login and Signup to search for the weather specifications in each city. Made
-                        with Handlebars, CSS, NodeJs and OpenWeatherMap API. Deployed in Vercel and uses the MongoDB
-                        Database.
-                    </p>
-                    <div>
-                        <a href="https://github.com/TatianaSanchez01/weatherme1.git" class="button">Github
-                            Repository</a>
-                        <a href="https://weatherme-six.vercel.app/" class="button">See it live</a>
-                    </div>
-                </div>
-                <img src="img/weatherme-project.jpg" alt="project image" class="article-img">
-            </article>
-        </section>
+    <!-- Main Container End -->
 
-        <section class="contact primary-theme">
-            <h2>Contact</h2>
-            <p>If you'd like to work with me, you can drop me a message!</p>
-            <a href="#contact" class="button">Let's Talk</a>
-        </section>
-    </main>
 
-    <footer id="contact">
-        <ul class="social">
-            <li class="social-item">
-                <a href="https://www.linkedin.com/in/tatiana-sanchez-sanin/" class="social-link linkedin">LinkedIn</a>
-            </li>
-            <li class="social-item">
-                <a href="https://github.com/TatianaSanchez01" class="social-link github">Github</a>
-            </li>
-        </ul>
-        <p>&copy; 2022 - Portfolio design by Tatiana</p>
-    </footer>
+
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
