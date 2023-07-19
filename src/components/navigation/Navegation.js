@@ -8,8 +8,8 @@ import logo from "../../assets/images/logo.png";
 import './Navegation.css';
 export const Navegation = () => {
 
-    const { activeLink, setActiveLink } = useState('home');
-    const { scrolled, setScrolled } = useState(false);
+    const [activeLink, setActiveLink] = useState('home');
+    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const onScroll = () => {
