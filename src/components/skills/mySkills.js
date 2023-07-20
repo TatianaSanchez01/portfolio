@@ -9,13 +9,13 @@ import tailwindImg from '../../assets/images/skills/tailwind-css.png';
 import nodejsImg from '../../assets/images/skills/node-js.png';
 import phpImg from '../../assets/images/skills/php.png';
 import pythonImg from '../../assets/images/skills/python.png';
-import mySqlImg from '../../assets/images/skills/vuejs.png';
-import mongodbImg from '../../assets/images/skills/vuejs.png';
-import gitImg from '../../assets/images/skills/vuejs.png';
-import githubImg from '../../assets/images/skills/vuejs.png';
-import vscodeImg from '../../assets/images/skills/vuejs.png';
-import intellijImg from '../../assets/images/skills/vuejs.png';
-import figmaImg from '../../assets/images/skills/vuejs.png';
+import mySqlImg from '../../assets/images/skills/mysql.png';
+import mongodbImg from '../../assets/images/skills/mongodb.png';
+import gitImg from '../../assets/images/skills/git.png';
+import githubImg from '../../assets/images/skills/github.png';
+import vscodeImg from '../../assets/images/skills/visual-studio-code.png';
+import intellijImg from '../../assets/images/skills/intellij.png';
+import figmaImg from '../../assets/images/skills/figma.png';
 
 export const mySkills = [
     {

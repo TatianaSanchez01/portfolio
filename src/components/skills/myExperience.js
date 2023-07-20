@@ -19,7 +19,7 @@ export const myExperience = [
     },
     {
         year: 'July, 2023 - Present',
-        name: 'VIII Programming Contest Mentor',
+        name: 'VII Programming Contest Mentor',
         company: 'REDIS & Fedesoft',
         description: ''
     },
