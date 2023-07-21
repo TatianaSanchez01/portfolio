@@ -1,0 +1,213 @@
+.projects {
+    padding: 80px 0;
+    position: relative;
+    background-color: var(--secondary-color);
+}
+
+.projects h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.projects > p {
+    color: var(--text2);
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 20px auto 30px auto;
+    text-align: center;
+    width: 56%;
+}
+
+.projects .nav.nav-pills {
+    width: 72%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: rgb(255 255 255 / 10%);
+    overflow: hidden;
+}
+
+.projects .nav.nav-pills .nav-item {
+    width: 25%;
+}
+
+.projects .nav.nav-pills .nav-link {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 17px 0;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    z-index: 0;
+}
+
+.projects .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+
+.projects .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+
+.projects .nav.nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.nav-link#projects-tabs-tab-first {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 55px 0px 0px 55px;
+}
+
+.nav-link#projects-tabs-tab-second {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-link#projects-tabs-tab-third {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-link#projects-tabs-tab-fourth {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 55px 55px 0;
+}
+
+.projects-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: var(--text1);
+    cursor: default;
+    transition: 0.5s all ease-in-out;
+}
+
+.imgbx {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.imgbx > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-hover {
+    display: none;
+}
+
+.project-card:hover .project-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(213, 178, 234, 0.8);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.project-hover p {
+    margin-top: 60px;
+    padding: 15px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+}
+
+.project-links a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    
+    transition: all 0.5s ease-in-out; 
+}
+
+.project-links a img{
+    width: 60%;
+    height: 60%;
+}
+
+.project-text h4 {
+    margin: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+}
+
+.project-text p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+.background-image-right {
+    top: 950px;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    right: 0;
+    z-index: -4;
+}
+
+@media screen and (min-width: 2000px) {
+    .imgbx img {
+        height: 350px;
+    }
+
+    .project-card {
+        width: 470px;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .project-card {
+        width: 100%;
+        margin: 1rem;
+    }
+}
