@@ -1,0 +1,30 @@
+.footer {
+    padding: 50px 0;
+    background-image: url("../../assets/images/footer-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer img {
+    width: 30%;
+}
+
+.footer .logo {
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > .social-icon {
+    background: transparent;
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text2);
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}

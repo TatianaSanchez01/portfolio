@@ -1,7 +1,7 @@
 .projects {
     padding: 80px 0;
     position: relative;
-    background-color: var(--secondary-color);
+    background-color: #d8b6ec;
 }
 
 .projects h2 {
@@ -24,7 +24,8 @@
     width: 72%;
     margin: 0 auto;
     border-radius: 30px;
-    background-color: rgb(255 255 255 / 10%);
+    background: rgb(213, 178, 234 / 10%);
+
     overflow: hidden;
 }
 
@@ -36,7 +37,7 @@
     background-color: transparent;
     border-radius: 0;
     padding: 17px 0;
-    color: #fff;
+    color: var(--text2);
     width: 100%;
     font-size: 17px;
     letter-spacing: 0.8px;
@@ -52,7 +53,7 @@
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+    background: linear-gradient(90deg, rgba(191,133,225,1) 0%, rgba(243,224,254,1) 35%, rgba(161,218,235,1) 100%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -161,11 +162,11 @@
     align-items: center;
     margin-right: 15px;
     margin-bottom: 50px;
-    
-    transition: all 0.5s ease-in-out; 
+
+    transition: all 0.5s ease-in-out;
 }
 
-.project-links a img{
+.project-links a img {
     width: 60%;
     height: 60%;
 }

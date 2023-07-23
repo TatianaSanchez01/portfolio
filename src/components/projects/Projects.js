@@ -3,7 +3,6 @@ import { Col, Row, Container, Nav, Tab } from 'react-bootstrap';
 import { useState } from 'react';
 import { myProjects } from './myProjects';
 import './Projects.css';
-import colorSharp2 from '../../assets/images/color-sharp2.jpg';
 import github2 from '../../assets/images/github2.png';
 import demo from '../../assets/images/demo.png';
 export const Projects = () => {
@@ -171,7 +170,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container >
-            <img src={colorSharp2} className='background-image-right' alt='projects background' />
+
         </section >
     )
 }
