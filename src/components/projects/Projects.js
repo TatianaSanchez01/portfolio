@@ -9,7 +9,7 @@ import demo from '../../assets/images/demo.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
-    const [projects, setProjects] = useState(myProjects);
+    const [projects] = useState(myProjects);
     const backendProjects = projects.filter(project => project.category.includes("Backend"));
     const frontendProjects = projects.filter(project => project.category.includes("Frontend"));
     const fullstackProjects = projects.filter(project => project.category.includes("Fullstack"));

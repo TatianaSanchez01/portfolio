@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import './Contact.css';
 import TrackVisibility from "react-on-screen";

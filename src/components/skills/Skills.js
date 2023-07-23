@@ -18,8 +18,8 @@ import meter3 from '../../assets/images/meter3.png'
 
 export const Skills = () => {
 
-    const [skills, setSkills] = useState(mySkills);
-    const [experiences, setExperience] = useState(myExperience);
+    const [skills] = useState(mySkills);
+    const [experiences] = useState(myExperience);
 
     const responsive = {
         superLargeDesktop: {
