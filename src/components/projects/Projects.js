@@ -3,8 +3,11 @@ import { Col, Row, Container, Nav, Tab } from 'react-bootstrap';
 import { useState } from 'react';
 import { myProjects } from './myProjects';
 import './Projects.css';
+
 import github2 from '../../assets/images/github2.png';
 import demo from '../../assets/images/demo.png';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
     const [projects, setProjects] = useState(myProjects);
     const backendProjects = projects.filter(project => project.category.includes("Backend"));
@@ -17,8 +20,17 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
-                        <p>Duis luctus nunc ligula, ac posuere sapien maximus ut. Morbi.</p>
+                        <TrackVisibility partialVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? " animate-zoom-in-up" : ""}>
+                                    <h2>Projects</h2>
+                                    <p className='projects-desc'>This section showcases a collection of my projects, each demonstrating
+                                        different skills and technologies. Whether it's frontend, backend, or
+                                        full-stack development, these projects reflect my passion for coding
+                                        and solving real-world problems. Feel free to explore the projects, check
+                                        out their source code on GitHub, and even try out the live demos!</p>
+                                </div>}
+                        </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
                                 <Nav.Item>
@@ -56,10 +68,7 @@ export const Projects = () => {
                                                                 <div className="project-text">
                                                                     <h4>{project.name}</h4>
                                                                     <p>{project.description}</p>
-
-
                                                                 </div>
-
                                                             </Col>
                                                         </div>
                                                     )
@@ -91,7 +100,6 @@ export const Projects = () => {
                                                                     <h4>{project.name}</h4>
                                                                     <p>{project.description}</p>
                                                                 </div>
-
                                                             </Col>
                                                         </div>
                                                     )
@@ -166,6 +174,7 @@ export const Projects = () => {
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
+
 
                     </Col>
                 </Row>

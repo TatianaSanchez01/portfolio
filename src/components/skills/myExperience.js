@@ -18,9 +18,23 @@ export const myExperience = [
         description: ''
     },
     {
+        year: 'October, 2022 - November, 2022',
+        name: 'Front-end technology student',
+        company: 'Frontend Foxes',
+        description: ''
+    },
+    {
+        year: 'April, 2023 - Present',
+        name: 'Backend Developer Student',
+        company: 'Oracle Next Education',
+        description: ''
+    },
+
+    {
         year: 'July, 2023 - Present',
         name: 'VII Programming Contest Mentor',
         company: 'REDIS & Fedesoft',
         description: ''
     },
+
 ]

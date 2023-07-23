@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap"
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.jpg';
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
 import './Footer.css';

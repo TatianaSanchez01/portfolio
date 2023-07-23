@@ -1,5 +1,8 @@
-import './App.css';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './App.css';
+
 import { Navegation } from './components/navigation/Navegation';
 import { Banner } from './components/banner/Banner';
 import { Skills } from './components/skills/Skills';

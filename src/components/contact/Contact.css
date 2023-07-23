@@ -1,21 +1,20 @@
 .contact {
-    background: rgb(213, 178, 234);
     background: linear-gradient(
         90deg,
-        rgba(213, 178, 234, 1) 0%,
+        rgba(117, 124, 205, 1) 0%,
         rgba(243, 224, 254, 1) 35%,
-        rgba(161, 218, 235, 1) 100%
+        rgba(154, 195, 240, 1) 100%
     );
-    padding: 60px 0 200px 0;
+    padding: 80px 0;
 }
 .contact img {
-    width: 92%;
+    width: 80%;
 }
 .contact h2 {
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: var(--primary-color);
+    color: var(--text1);
 }
 
 .contact .contact-icon {
@@ -31,7 +30,7 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    color: #fff;
+    color: var(--text2);
     margin: auto;
     padding: 18px 26px;
     font-weight: 500;
@@ -44,7 +43,7 @@
 
 .contact .contact-info a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text2);
 }
 
 .contact .contact-info a:hover {
@@ -52,19 +51,34 @@
     color: var(--secondary-color);
 }
 
-.contact form input:focus,
-.contact form textarea:focus {
-    background: rgba(255, 255, 255, 1);
-    color: #121212;
+.animate-zoom-in {
+    /* Zoom-in animation for the header */
+    animation: zoomIn 1s ease-in-out;
+    animation-fill-mode: forwards; /* Maintain the final state after animation */
 }
-.contact form input::placeholder,
-.contact form textarea::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
-.contact form input:focus::placeholder,
-.contact form textarea:focus::placeholder {
-    color: #121212;
-    opacity: 0.8;
+
+@media screen and (max-width: 991px) {
+    .contact .contact-icon {
+        width: 15%;
+        display: flex;
+    }
+    .contact h2 {
+        font-size: 40px;
+        margin-top: 2rem;
+    }
+    .contact .contact-info a {
+        font-size: 16px;
+        word-wrap: break-word;
+    }
 }
