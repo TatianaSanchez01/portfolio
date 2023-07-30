@@ -38,7 +38,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@
 }
 
 .skill-item div:hover {
-    box-shadow: 0 0 25px var(--secondary-color);
+    box-shadow: 0 0 25px var(--secondary);
 }
 
 .skill-item p {
@@ -93,7 +93,7 @@
 
 .experience-work p {
     font-weight: 400;
-    color: var(--text2);
+    color: var(--accents);
     margin-top: 5px;
 }
 
@@ -103,7 +103,7 @@
 
 .experience-year p {
     font-weight: 800;
-    color: var(--secondary-color);
+    color: var(--primary);
 }
 
 .skills-tooltip {
@@ -112,14 +112,14 @@
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
     border-radius: 5px !important;
     padding: 1rem !important;
-    color: var(--secondary-color) !important;
+    color: var(--secondary) !important;
     text-align: center !important;
     line-height: 1.5 !important;
     opacity: 1 !important;
 }
 
 .skill-bx {
-    background: var(--secondary-color);
+    background: var(--primary);
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
@@ -134,7 +134,7 @@
 }
 
 .skill-bx p {
-    color: var(--text2);
+    color: var(--text);
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -237,8 +237,7 @@
 @media screen and (max-width: 1500px) {
     .skills-container:after {
         content: "";
-        background-color: var(--secondary-color);
-
+        background-color: var(--secondary);
         width: 5px;
         height: 600px;
         top: 1450px;

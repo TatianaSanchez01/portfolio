@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #d5b2ea;
-    --accents: #c4a59d;
-    --blocks: #a3bba3;
+    --background: #f3f2f2;
+    --primary: #d5b2ea;
+    --secondary: #ccccfa;
+    --accents: #685d6f;
     --text1: #000000;
-    --text2: #121212;
+    --text2: #f3f2f2;
+
+    /* --text: #f3f2f2;
+    --background: #2e0505;
+    --primary: #d5b2ea;
+    --secondary: #04042a;
+    --accent: #b4acb9; */
 }
 
 * {

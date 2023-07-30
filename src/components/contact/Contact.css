@@ -1,9 +1,8 @@
 .contact {
     background: linear-gradient(
         90deg,
-        rgba(117, 124, 205, 1) 0%,
-        rgba(243, 224, 254, 1) 35%,
-        rgba(154, 195, 240, 1) 100%
+        rgba(213, 178, 234, 1) 0%,
+        rgba(204, 204, 250, 1) 70%
     );
     padding: 80px 0;
 }
@@ -14,7 +13,7 @@
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: var(--text1);
+    color: var(--text);
 }
 
 .contact .contact-icon {
@@ -27,10 +26,10 @@
 }
 .contact .contact-info {
     width: 80%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(204, 204, 250, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    color: var(--text2);
+    color: var(--text);
     margin: auto;
     padding: 18px 26px;
     font-weight: 500;
@@ -43,12 +42,11 @@
 
 .contact .contact-info a {
     text-decoration: none;
-    color: var(--text2);
+    color: var(--text);
 }
 
 .contact .contact-info a:hover {
     text-decoration: underline;
-    color: var(--secondary-color);
 }
 
 .animate-zoom-in {

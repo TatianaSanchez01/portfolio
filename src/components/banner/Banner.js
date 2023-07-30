@@ -19,7 +19,7 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className='tagline'>Welcome to my Portfolio!</span>
-                                    <h1>{`👋 Hi, I'm Tatiana`} <span className='wrap'> a system's engineering student</span> </h1>
+                                    <h1>👋<span className='wrap'> Hi, I'm Tatiana </span> <br />  a computer engineering student </h1>
                                     <p>I'm a systems engineer student at Universidad de Antioquia, Colombia. I have a passion for coding and enjoy exploring various programming languages and technologies. While I wouldn't consider myself an expert in any particular language, I have experience working with a diverse set of tools, frameworks, and databases.</p>
                                     <p>I'm constantly learning and expanding my skills in the field of software development. I'm particularly interested in web development and enjoy creating dynamic and interactive user experiences.</p>
                                     <a href={CV} download="Tatiana Sanchez_CV">

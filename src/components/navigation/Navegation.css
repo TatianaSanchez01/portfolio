@@ -8,14 +8,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
     padding: 0px 0;
-    background-color: var(--primary-color);
-    border-bottom: 3px solid var(--secondary-color);
+    background-color: var(--background);
+    border-bottom: 3px solid var(--primary);
 }
 
 @media screen and (max-width: 991px) {
     nav.navbar {
-        background-color: var(--primary-color);
-        border-bottom: 3px solid var(--secondary-color);
+        background-color: var(--background);
+        border-bottom: 3px solid var(--primary);
     }
 }
 nav.navbar a.navbar-brand {
@@ -23,7 +23,7 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
-    color: var(--text2) !important;
+    color: var(--text) !important;
     letter-spacing: 0.8px;
     padding: 0 25px;
     font-size: 21px;
@@ -34,6 +34,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
     text-decoration: underline;
+    filter: drop-shadow(0 0 30px rgba(104, 93, 111, 1));
 }
 
 span.navbar-text {
@@ -49,7 +50,7 @@ span.navbar-text {
 .social-icon a {
     width: 50px;
     height: 50px;
-    background: var(--primary-color);
+    background: var(--background);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 10px;
@@ -63,7 +64,7 @@ span.navbar-text {
     width: 50px;
     height: 50px;
     position: absolute;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary);
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
@@ -82,8 +83,8 @@ span.navbar-text {
 }
 .navbar-text button {
     font-weight: 700;
-    color: #121212;
-    border: 1px solid #121212;
+    color: var(--text);
+    border: 1px solid var(--text);
     border-radius: 15px;
     padding: 15px 22px;
     font-size: 21px;
@@ -100,7 +101,7 @@ span.navbar-text {
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary);
     border-radius: 15px;
     left: 0;
     top: 0;
@@ -108,7 +109,7 @@ span.navbar-text {
     transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-    color: var(--text1);
+    color: var(--text);
 }
 .navbar-text button:hover::before {
     content: "";
@@ -126,19 +127,19 @@ nav.navbar .navbar-toggler-icon {
     height: 17px;
     background-image: none;
     position: relative;
-    border-bottom: 2px solid var(--text1);
+    border-bottom: 2px solid var(--text);
     transition: all 300ms linear;
     top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-    border-bottom: 2px solid var(--text1);
+    border-bottom: 2px solid var(--text);
 }
 nav.navbar .navbar-toggler-icon::after,
 nav.navbar .navbar-toggler-icon::before {
     width: 24px;
     position: absolute;
     height: 3px;
-    background-color: var(--text1);
+    background-color: var(--text);
     top: 0;
     left: 0;
     content: "";
@@ -150,12 +151,12 @@ nav.navbar .navbar-toggler-icon::after {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
     transform: rotate(45deg);
-    background-color: var(--text1);
+    background-color: var(--text);
     height: 3px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
     transform: translateY(8px) rotate(-45deg);
-    background-color: var(--text1);
+    background-color: var(--text);
     height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {

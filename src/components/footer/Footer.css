@@ -24,7 +24,7 @@
 .footer p {
     font-weight: 400;
     font-size: 14px;
-    color: var(--text2);
+    color: var(--text);
     letter-spacing: 0.5px;
     margin-top: 20px;
 }

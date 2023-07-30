@@ -21,11 +21,12 @@
     letter-spacing: 0.8px;
     padding: 8px 10px;
     background: linear-gradient(
-        90.21deg,
-        rgba(170, 54, 124, 0.5) -5.91%,
-        rgba(74, 47, 189, 0.5) 111.58%
+        90deg,
+        rgba(213, 178, 234, 1) 0%,
+        rgba(204, 204, 250, 1) 35%
     );
     border: none;
+    border-radius: 15px;
     font-size: 20px;
     margin-bottom: 16px;
     display: inline-block;
@@ -38,8 +39,14 @@
     margin-bottom: 40px;
     display: block;
 }
+
+.banner h1 span {
+    background: linear-gradient(to right, #685d6f, #000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .banner p {
-    color: var(--text2);
+    color: var(--text);
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -47,7 +54,7 @@
     margin: 25px 0;
 }
 .banner button {
-    color: var(--primary-color);
+    color: var(--secondary);
     font-weight: 700;
     font-size: 20px;
     margin-top: 50px;
